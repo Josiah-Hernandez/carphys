@@ -11,23 +11,22 @@ const VehicleSchema = new mongoose.Schema({
     },
     vehicleYear: {
         type: Number,
-        required : [true, "Pirate Must Have Booty"]
+        required : [true, "Vehicle Must Have A Year"]
     },
-    catchPhrase: {
+    vehicleEngine: {
         type: String,
-        required : [true, "What Be Ye Catch Phrase"]
+        required : [true, "Vehicle Must Have A Engine"]
     },
-    crewPosition: {
-        type: String,
-        required : [true, "Pirate Must Have Crew Position"]
-    },
-    pegLeg: {
+    automatic: {
         type: Boolean
     },
-    eyePatch: {
+    manual: {
         type: Boolean
     },
-    hookHand: {
+    twoWheelDrive: {
+        type: Boolean
+    },
+    fourWheelDrive: {
         type: Boolean
     }
 
